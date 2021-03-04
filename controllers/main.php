@@ -16,6 +16,7 @@ class Main extends CI_Controller
     {
         $this->lists(); // $this : 현재 객체를 의미 
     }
+
 	
     // ■ todo 목록 보여주는 뷰 호출 메소드 
     public function lists() 
