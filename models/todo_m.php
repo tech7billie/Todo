@@ -22,6 +22,17 @@ class Todo_m extends CI_Model
         return $result;
     }
 
+    // ■ 하나의 todo 반환하는 메소드 
+    function get_view($id)
+    {
+            $sql = "SELECT * FROM items WHERE id = '" . $id . "'"; // php 문자열 연결 연산자 : . 
+            $query = $this->db->query($sql);
+            $result = $query->row(); // // 객체 형태로 반환 
+            
+
+            return result;
+    }
+
 	
 }
 
