@@ -51,24 +51,23 @@
                     <tfoot>
                         <tr>
                             <th colspan="4">
-                                <a href="/todo/index.php/main/lists/" class="btn btn-primary">목록</a>
-                                <a href="/todo/index.php/main/delete/<?php echo $this -> uri -> segment(3); ?>" class="btn btn-danger">삭제</a>
-                                <a href="/todo/index.php/main/write/" class="btn btn-success">쓰기</a>
+                                <a href="/index.php/main/lists/" class="btn btn-primary">목록</a>
+                                <a href="/index.php/main/delete/<?php echo $this -> uri -> segment(3); ?>" class="btn btn-danger">삭제</a>
+                                <a href="/index.php/main/write/" class="btn btn-success">쓰기</a>
                             </th>
                         </tr>
                     </tfoot>
                 </table>
             </article>
             
-        <footer>
+        <!--<footer>
             <blockquote>
                 <p><a class="azubu" href="http://www.cikorea.net/" target="blank">CodeIgniter 한국 사용자 포럼</a></p>
                 <small>Copyright by <em class="black"><a href="mailto:zhfldi4@gmail.com">Palpit</a></em></small>
             </blockquote>
-        </footer>        
+        </footer>       
+        -->
         </div>
     </body>
 </html>
 
-
-출처: https://palpit.tistory.com/entry/CodeIgniter-3-Todo-애플리케이션-프로젝트?category=848182 [Palpit's Techlog]
