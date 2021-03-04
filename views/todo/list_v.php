@@ -72,12 +72,12 @@
             <div><p></p></div>
         </article>
         
-        <footer>
+        <!--<footer>
             <blockquote>
                 <p><a class="azubu" href="http://www.cikorea.net/" target="blank">CodeIgniter 한국 사용자 포럼</a></p>
                 <small>Copyright by <em class="black"><a href="mailto:zhfldi4@gmail.com">Palpit</a></em></small>
             </blockquote>
-        </footer>
+        </footer>-->
     </div>
 </body>
 </html>
