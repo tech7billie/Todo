@@ -46,7 +46,7 @@
                             <?php echo $lt -> id;?>
                         </th>
                         <td>
-                            <a rel="external" href="/todo/index.php/main/view/<?php echo $lt -> id; ?>">
+                            <a rel="external" href="/index.php/main/view/<?php echo $lt -> id; ?>">
                                 <?php echo $lt -> content;?>
                             </a>
                         </td>
@@ -63,7 +63,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th colspan="4"><a href="/todo/index.php/main/write/" class="btn btn-success">
+                        <th colspan="4"><a href="/index.php/main/write/" class="btn btn-success">
                             쓰기
                         </a></th>
                     </tr>

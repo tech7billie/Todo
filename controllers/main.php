@@ -35,7 +35,6 @@ class Main extends CI_Controller
 			// todo 번호에 해당하는 데이터를 가져오기 
 			$id = $this->uri->segment(3);
 
-            echo $id;
             
 			/*
 			  ·	segment(n) : url 에서 특정 새그먼트를 추출한다.
