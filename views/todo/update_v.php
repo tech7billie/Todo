@@ -36,27 +36,31 @@
                     <h1>Todo 수정</h1>
                 </header>
  
-                <form class="form-horizontal" method="post" action="" id="write_action">
+                <form class="form-horizontal" method="post" action="" id="update_action">
+
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label" for="input01">내용</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="input01" name="content">
+                                <input type="text" class="input-xlarge" id="input01" name="content"
+                                    value="<?php echo $views ->content;?>">
                                 <p class="help-block"></p>
                             </div>
                             <label class="control-label" for="input02">시작일</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="input02" name="created_on">
+                                <input type="text" class="input-xlarge" id="input02" name="created_on"
+                                value="<?php echo $views ->created_on;?>">
                                 <p class="help-block"></p>
                             </div>
                             <label class="control-label" for="input03">종료일</label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge" id="input03" name="due_date">
+                                <input type="text" class="input-xlarge" id="input03" name="due_date"
+                                value="<?php echo $views ->due_date;?>">
                                 <p class="help-block"></p>
                             </div>
  
                             <div class="form-actions">
-                                <input type="submit" class="btn btn-primary" id="write_btn" value="작성" />
+                                <input type="submit" class="btn btn-primary" id="update_btn" value="수정" />
                             </div>
                         </div>
                     </fieldset>

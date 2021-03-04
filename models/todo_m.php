@@ -49,11 +49,11 @@ class Todo_m extends CI_Model
      }
 
      // ■ todo 수정 
-     function update_todo($content, $created_on, $due_date)
+     function update_todo($id,$content, $created_on, $due_date)
      {
-         $sql = "UPDATE items SET content='".$content."', created_on='".$created_on."', due_date='".$due_date."' WHERE id='".$id."'";
+         $sql = "UPDATE items SET content ='".$content."', created_on ='".$created_on."', due_date ='".$due_date."' WHERE id ='".$id."'";
          
-         echo $sql 
+         echo $sql;
          // UPDATE items SET content='', CREATED_ON='', DUE_DATE=''
          // WHERE ID = ''; 
 

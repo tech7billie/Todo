@@ -98,6 +98,8 @@ class Main extends CI_Controller
     // ■ todo 수정 
     public function update()
     {
+          // 해당 게시물 내용 얻도록 게시물 번호 얻기
+          $id = $this->uri->segment(3);
 
         // POST 방식으로 전송된 값은 $_POST 로 받는다.
 		if($_POST)
@@ -108,26 +110,23 @@ class Main extends CI_Controller
 			$due_date = $this->input->post('due_date', TRUE);	
 
             // db 에서 수정
-			$this->todo_m->update_todo($content, $created_on, $due_date);
+			$this->todo_m->update_todo($id, $content, $created_on, $due_date);
 
-             // 목록 보여주는 뷰로 리다이렉트
+            // 목록 보여주는 뷰로 리다이렉트
 			redirect('/main/lists/');	
 			
 			exit;
 		}
 		else
 		{
-             // 해당 게시물 내용 얻도록 게시물 번호 얻기
-            $id = $this->uri->segment(3);
+            // 게시물 번호에 해당하는 todo 데이터 얻기 
+            $data['views'] = $this->todo_m->get_view($id);
 
-            // 얻은 게시물 번호로 해당하는 todo 얻기 
-            
+            // view 호출하면서 $data 넘기기 
+            $this->load->view('todo/update_v', $data);
 
-			// 수정 폼 view 호출 
-			$this->load->view('todo/update_v');
 		}
        
-
 
     }
 
