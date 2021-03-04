@@ -9,7 +9,7 @@
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link type="text/css" rel='stylesheet' href="/todo/include/css/bootstrap.css" />
+    <link type="text/css" rel='stylesheet' href="/include/css/bootstrap.css" />
 </head>
 <body>
     <div id="main">
@@ -20,9 +20,9 @@
             </blockquote>
         </header> <!-- Header End -->
         <nav id="gnb"> <!-- gnb start -->
-            <ul>
+            <!--<ul>
                 <li><a rel="external" href="/todo/index.php/main/lists/">todo 애플리케이션 프로그램</a></li>
-            </ul>
+            </ul>-->
         </nav><!-- gnb end -->
         <article id="board_area">
             <header>
