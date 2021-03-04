@@ -1,5 +1,14 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
  
+ /*
+    1. index() 
+    2. lists()  : todo 목록 보여주는 뷰 로드
+    3. view()   : todo 내용 보여주는 뷰 로드 
+    4. write()  : todo 작성 폼, 목록 로드 
+    5. delete() : todo 삭제 후 목록 로드 
+    6. update() : todo 수정 폼, 목록 로드
+
+ */
 class Main extends CI_Controller 
 {
 	// 생성자에서 로드 (DB, Model, Helper) 
@@ -18,7 +27,7 @@ class Main extends CI_Controller
     }
 
 	
-    // ■ todo 목록 보여주는 뷰 호출 메소드 
+    // todo 목록 보여주는 뷰 로드 
     public function lists() 
     {
         // to do 목록을 가져와서 $data 배열에 'list' 키의 값으로 담는다.
@@ -29,7 +38,7 @@ class Main extends CI_Controller
         $this->load->view('todo/list_v', $data);
     }
 
-    // ■ todo 클릭 시 내용 보여주는 뷰 호출 메소드 
+    // todo 클릭 시 내용 보여주는 뷰 로드
     public function view()
     {
         // todo 번호에 해당하는 데이터를 가져오기 
@@ -51,7 +60,7 @@ class Main extends CI_Controller
 
     }
 
-    // ■ todo 입력 메소드 
+    // todo 입력 
 	public function write()
 	{
         // POST 방식으로 전송된 값은 $_POST 로 받는다.
@@ -81,7 +90,7 @@ class Main extends CI_Controller
 		}
 	}
 
-    // ■ todo 삭제
+    // todo 삭제
 	public function delete()
 	{
 		// 해당 게시물 삭제하도록 게시물 번호 얻기 
@@ -95,7 +104,7 @@ class Main extends CI_Controller
 		
 	}
 
-    // ■ todo 수정 
+    // todo 수정 
     public function update()
     {
           // 해당 게시물 내용 얻도록 게시물 번호 얻기

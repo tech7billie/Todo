@@ -8,8 +8,8 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link type="text/css" rel='stylesheet' href="application/include/css/bootstrap.min.css"/>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <link href="include/css/bootstrap.css" rel='stylesheet'/>
 </head>
 <body>
     <div id="main">
